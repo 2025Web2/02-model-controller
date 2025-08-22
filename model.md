@@ -40,7 +40,7 @@ php artisan make:model Item
 **【解説】**　<br>
 
 `protected $primaryKey = 'ident';`: <br>
-[マイグレーションの補足](#マイグレーション)で説明したように、`items`テーブルの主キーがデフォルトの`id`ではなく`ident`であるため、`$primaryKey`プロパティを使って、主キーが`ident`であることを指定しています。
+[マイグレーションの補足](migration.md#マイグレーション)で説明したように、`items`テーブルの主キーがデフォルトの`id`ではなく`ident`であるため、`$primaryKey`プロパティを使って、主キーが`ident`であることを指定しています。
 この指定がなければ、モデルを使用してデータを取得する際、`id`を主キーとして扱おうとしてしまいエラーが発生します。
 
 上記のように、`php artisan make:model Item`コマンドを実行し、Itemモデルを作成することで、`items`テーブルとのやり取りを行うための準備ができました。
